@@ -1,4 +1,3 @@
-from itertools import islice
 import numpy as np
 import cv2 
 import sys
@@ -80,7 +79,6 @@ cv2.destroyAllWindows()
 if(bool(input("continue?"))):
     quit()
 
-# switch to RGB 
 cv2.imshow('sorted image', pixelSortHoriz(im))
 cv2.imwrite('output.jpg',pixelSortHoriz(im))
 cv2.waitKey(0)
